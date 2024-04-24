@@ -1,0 +1,85 @@
+/* 
+.dil{
+    width: 200px;
+    height: 200px;
+    background-color: #fb92d6;
+    transform: rotate(45deg);
+    position: relative;
+    
+}
+.dil::before,
+.dil::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #fb92d6;
+    position: absolute;
+    border-radius: 50%;
+
+}
+.dil::before{
+    left: -100px;
+
+}
+.dil::after{
+    top: -100px;
+
+}
+.dil>p{
+    position: absolute;
+    z-index: 100;
+    font-size: 40px;
+    transform: rotate(-45deg);
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dil {
+    width: 200px;
+    height: 200px;
+    /* background-color: #fb92d6; */
+    background-color: red;
+
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.dil::before,
+.dil::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    /* background-color: #fb92d6; */
+    background-color: red;
+
+    position: absolute;
+    border-radius: 50%;
+}
+
+.dil::before {
+    left: -100px;
+}
+
+.dil::after {
+    top: -100px;
+}
+
+
+
+.dil > p {
+    position: absolute;
+    z-index: 100;
+    font-size: 40px;
+    transform: rotate(-45deg);
+    color: white;
+    top: 20%;
+    left: 35%; 
+    right: 10%;
+    text-align: center; 
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
